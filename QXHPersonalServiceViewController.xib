@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QXHPersonalServiceViewController">
+            <connections>
+                <outlet property="btnCopy" destination="7lA-TM-05y" id="IZj-5P-vjY"/>
+                <outlet property="labelCustomService" destination="8Xx-4Y-1TC" id="ODt-bc-TuF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRH-6P-aYN" customClass="QXHCustomNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXW-Ec-9f0">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <state key="normal" image="black_back"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="tes-84-5O3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="联系客服" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-Nv-dUS">
+                            <rect key="frame" x="108" y="32" width="159" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="OA5-lp-3Iu"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="疑难解答 一对一服务" translatesAutoresizingMaskIntoConstraints="NO" id="9lI-wH-RQ4">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lA-TM-05y">
+                    <rect key="frame" x="22" y="602" width="330" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="tpe-Cb-TlU"/>
+                    </constraints>
+                    <state key="normal" title="复制去微信添加">
+                        <color key="titleColor" red="0.011764705882352941" green="0.67843137254901964" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="copyAction:" destination="-1" eventType="touchUpInside" id="iki-Ru-UTE"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPv-q2-2Gh">
+                    <rect key="frame" x="31" y="503" width="313" height="79"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="矩形 1 拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="wYh-g1-rIz">
+                            <rect key="frame" x="0.0" y="0.0" width="313" height="79"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您的专属客服微信：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-2y-1xi">
+                            <rect key="frame" x="16" y="17" width="120" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xx-4Y-1TC">
+                            <rect key="frame" x="16" y="42" width="279" height="24"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="KIH-Pm-3Jc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jRH-6P-aYN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DG5-ZY-IYw"/>
+                <constraint firstItem="7lA-TM-05y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="Eup-hA-g9g"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="7lA-TM-05y" secondAttribute="bottom" constant="20" id="K98-b4-Tj0"/>
+                <constraint firstItem="9lI-wH-RQ4" firstAttribute="top" secondItem="jRH-6P-aYN" secondAttribute="bottom" id="N50-DN-qgB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hPv-q2-2Gh" secondAttribute="trailing" constant="31" id="QcT-4p-E5q"/>
+                <constraint firstItem="hPv-q2-2Gh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="V1K-Zb-dmt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7lA-TM-05y" secondAttribute="trailing" constant="23" id="VsS-Kt-HBk"/>
+                <constraint firstItem="jRH-6P-aYN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bMG-uE-dl7"/>
+                <constraint firstItem="9lI-wH-RQ4" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="cYb-qs-lFr"/>
+                <constraint firstItem="jRH-6P-aYN" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="dXb-EH-Vfo"/>
+                <constraint firstItem="9lI-wH-RQ4" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="fai-h5-fcY"/>
+                <constraint firstItem="7lA-TM-05y" firstAttribute="top" secondItem="hPv-q2-2Gh" secondAttribute="bottom" constant="20" id="hhQ-T3-LnA"/>
+                <constraint firstItem="9lI-wH-RQ4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jmt-vj-RJE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-148" y="168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="black_back" width="9.5" height="16"/>
+        <image name="疑难解答 一对一服务" width="375" height="603"/>
+        <image name="矩形 1 拷贝" width="313" height="78.5"/>
+    </resources>
+</document>
